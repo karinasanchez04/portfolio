@@ -1,0 +1,1 @@
+I got pretty good scores on my lighthouse reports. Therefore I worked on making my site more mobile friendly.

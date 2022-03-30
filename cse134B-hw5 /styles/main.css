@@ -1,0 +1,372 @@
+:root{
+    --green: #a6b9a4;
+    --lightPink: #F4E6E4;
+    --mauve: #BDA49C;
+}
+
+*{
+    font-family: 'Sansita', sans-serif;
+}
+
+body {
+   padding: 0px; 
+   margin: 0px;
+
+}
+.navBar{
+    background-color: var(--green);
+    display: flex;
+    margin-top: 0px;
+    justify-content: end;
+    padding-right: 20px;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    
+}
+#navListContainer{
+    display: inline-block;
+    position: absolute;
+    margin-top: -20px;
+    right: 0%;
+    z-index: 3;
+    background-color: var(--green);
+    visibility: hidden;
+}
+
+.navElemMobile{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: var(--green);
+    color: white;
+ 
+}
+#hamMenu{
+    visibility: hidden;
+}
+
+.navListMobile{
+    display: block;
+}
+.logoK{
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: -20px;
+    z-index: 3;
+}
+.logoS{
+    color: white;
+    position: absolute;
+    left: 7%;
+    top: -5px;
+    z-index: 3;
+}
+
+
+.navList{
+    display: flex;
+    position: relative;
+    background-color: var(--green);
+}
+
+
+.navElem{
+    margin-left: 30px;
+    background-color: var(--green);
+    color: white;
+    display: flex;   
+}
+
+main{
+    margin-top: 50px;
+    margin: 50px;
+}
+#intro{
+    background-color: var(--lightPink);
+    border: ridge;
+    border-width: 5px;
+    border-color: var(--mauve);
+    display: inline-block;
+    padding: 0px 20px 20px 30px;
+    height: 300px;
+    width: 600px;
+    position: relative;
+
+    
+    
+}
+#name-intro{
+    font-size: 2.5em; 
+    text-align: center; 
+    animation: 
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite; overflow: hidden;
+}
+
+#emoji-picture{
+    background-color: var(--mauve);
+    height: 450px;
+    margin-left: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 50vw;
+    text-align: center;
+    max-width: 500px;
+    border: ridge;
+    border-width: 5px;
+    border-color: var(--mauve);
+    
+}
+.emojiIcon:hover{
+    box-shadow: 2px 5px 3px var(--light-grey); 
+    transform: scale(1.11, 1.11);
+    transition: ease-in-out .25s;
+}
+
+#about{
+    display: flex;
+    align-content: center;
+    margin: 50px;
+}
+#about-picture{
+    background-color: var(--mauve);
+    padding: 20px;
+    margin-left: 120px;
+    position: sticky;
+    top: 15%;
+    height: 600px;
+    margin-top: 10px;
+    
+}
+.about-description{
+    background-color: var(--lightPink);
+    border-radius: 100%;
+    padding: 30px;
+    position: relative;
+    height: 200px;
+    max-width: 300px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    text-align: center;
+    overflow: scroll;
+}
+
+#home-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#projects-container, #skills-container{
+    display: flex; 
+    margin-top: 10px;
+    max-width: 1000px;
+
+}
+
+.projects-header{
+    background-color: var(--mauve);
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    
+}
+
+.projects, .skills{
+    background-color: var(--lightPink);
+    padding: 10px;
+    margin-right: 20px;
+    border: ridge;
+    border-width: 5px;
+    border-color: var(--mauve);
+
+}
+#idea-emoji{
+    position: relative;
+}
+
+
+
+#contact-wrapper{
+    display: flex;
+    margin-left: 50px;
+    align-content: center;
+    justify-content: center;
+    
+}
+#contact-container{
+    background-color: var(--lightPink);
+    margin-right: 20px;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border: ridge;
+    border-width: 5px;
+    border-color: var(--mauve);
+}
+
+#socials-container{
+    background-color: var(--mauve);
+    color: white;
+    margin-right: 20px;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    border: ridge;
+    border-width: 5px;
+    border-color: var(--mauve);
+}
+
+
+
+#contact-emoji{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+#hi-emoji{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+}
+
+#flowers-container{
+    text-align: center;
+}
+.center{
+    fill: rgb(255, 255, 215);
+    animation: grow 4s;
+    
+}
+.petal{
+    fill: var(--lightPink); 
+    animation: grow 4s;
+    z-index: 2;
+}
+
+.stem{
+    fill: var(--green);
+    animation: grow 4s;
+}
+
+@keyframes flowers {
+    0%{fill: rgb(212, 102, 102); stroke: rgb(177, 96, 96);}
+    25%{fill: rgb(231, 170, 231); stroke: rgb(235, 179, 235);}
+    50%{fill: rgb(160, 160, 247); stroke: rgb(162, 162, 253);}
+    
+}
+
+@keyframes grow {
+    0%{r:15; y: 100px; cy:100px} /*Error in css validator, these properties are svg properties*/
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100%}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes cursor{
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 246, 246); }
+  }
+
+#text-intro{
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; 
+    text-align: center;
+    width: 0;
+    animation: 
+    typing 3.5s steps(40, end) forwards,
+    cursor .75s step-end infinite;
+}
+
+#text-outro{
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; 
+    width: 0;
+    border-color: transparent;
+    text-align: center;
+    animation: 
+    typing 3.5s steps(40, end) forwards 3.5s,
+    cursor .75s step-end infinite;
+}
+
+@media screen and (max-width: 700px) {
+    #home-container, #projects-container, #skills-container, #contact-wrapper{
+        flex-wrap: wrap;
+        
+    }
+    #hi-emoji{
+        position: absolute;
+        top: 4%;
+        left: 70%;
+    }
+
+    .navList{
+        visibility: hidden;
+    }
+
+    #hamMenu{
+        visibility: visible;
+        z-index: 10;
+        position: absolute;
+        margin-top: 20px;
+    }
+    #navListContainer{
+        visibility: hidden;
+    }
+    #about-picture{
+        background-color: var(--mauve);
+        padding: 20px;
+        margin-left: 20px;
+        position: sticky;
+        top: 15%;
+        height: 200px;
+        width: 100px;
+        margin-top: 10px;
+        
+    }
+
+    #emoji-picture{
+        margin-left: 0px;
+        height: 200px;
+    }
+
+    .navElem{
+        margin-left: 10px;
+        font-size: .9em; 
+    }
+
+    #iframeApp{
+        width: 240px;
+        height: 200px;
+    }
+
+    #contact-container{
+        width: 300px;
+    }
+
+    .about-description{
+        border-radius: 10%;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        
+        
+    }
+}

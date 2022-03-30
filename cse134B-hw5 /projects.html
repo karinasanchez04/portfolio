@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Karina Sanchez</title>
+        <link href="csEmoji.ico" rel="icon"/>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <script>
+        function toggleHam(){
+          var menu = document.getElementById('hamMenu');
+          var navMenu = document.getElementById("navListContainer");
+          
+          if(navMenu.style.visibility == "visible"){
+            navMenu.style.visibility = "hidden";
+          }
+          else{
+            navMenu.style.visibility = "visible";
+          }
+        }
+      </script>
+        <header class="navBar">
+            <h1 class="logoK">K</h1>
+            <h1 class="logoS">S</h1>
+            <img id="hamMenu" src="bars-solid.svg" width="20" onclick="toggleHam()">
+            <nav>  
+              <ul class="navList">
+                  <li class="navElem"><a href="index.html">Home</a></li>
+                  <li class="navElem"><a href="projects.html">Projects/Skills</a></li>
+                  <li class="navElem"><a href="contact.html">Contact</a></li>
+                  <li class="navElem"><a href="about.html">About</a></li>
+                  <li class="navElem"><a href="experiment.html">Experiment</a></li>
+                  <li class="navElem"><a href="methodtest.html">Method Test</a></li>
+                <li class="navElem"><a href="styledcrud.html">Blogs</a></li>
+              </ul>
+              
+          </nav>
+        </header>
+        <div id="navListContainer">
+          <nav>  
+            <ul class="navListMobile">
+                <li class="navElemMobile"><a href="index.html">Home</a></li>
+                <li class="navElemMobile"><a href="projects.html">Projects/Skills</a></li>
+                <li class="navElemMobile"><a href="contact.html">Contact</a></li>
+                <li class="navElemMobile"><a href="about.html">About</a></li>
+                <li class="navElemMobile"><a href="experiment.html">Experiment</a></li>
+                <li class="navElemMobile"><a href="methodtest.html">Method Test</a></li>
+              <li class="navElemMobile"><a href="styledcrud.html">Blogs</a></li>
+            </ul>
+            
+        </nav>
+        </div>
+        <a href="./Karina_Sanchez_Resume-2.pdf" id="resume">Click here to view my resume!</a>
+        <main id="projects-wrapper">
+            <h1 class="projects-header">Projects</h1>
+            <div id="projects-container">
+                <section class="projects">
+                <h2>Quick N' Simple</h2>
+                    <iframe id="iframeApp" src="https://compassionate-bardeen-fe4d03.netlify.app/" title="Quick N' Simple" height="300" width="400"></iframe>
+                <p>A web app that allows you to seach, view and save recipes. Features include being able to make your own cookbooks and a tap mode! This 
+                    app was worked on by me and a group of 10 students at UCSD. 
+                </p>
+                <a href="https://compassionate-bardeen-fe4d03.netlify.app/">Visit Site</a>
+                <br>
+                <a href="https://github.com/cse110-fa21-group23/cse110-fa21-group23">View Github Repo</a>
+                </section>
+                <section class="projects">
+                <h2>Girls on the Go</h2>
+                    <picture>
+                        <img src="girlsOntheGoHome.png" alt="a picture of the girls on the go app." width="150" height="300">
+                    </picture>
+                    <p>A mobile app to provide a safer world for women. Features include location 
+                        sharing, a 911 button, a siren and more! This 
+                        app was worked on by me and a group of 3 students at UCSD. It also won first place in the Women In Computing 
+                        Winter Dev Competition!
+                    </p>
+                    <a href="https://github.com/karinasanchez04/WIC-Project">View Github Repo</a>
+                </section>    
+
+
+            </div>
+            <hr>
+            <h1 class="projects-header">Skills</h1>
+            <div id="skills-container">
+                <section class="skills">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <h2>Tools</h2>
+                    
+                    <ul>
+                        <li>VS Code</li>
+                        <li>REST API</li>
+                        <li>Firebase</li>
+                        <li>Github</li>
+                        <li>Git</li>
+                        <li>Figma</li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <h2>Relevant Courses I've Taken</h2>
+                    
+                    <ul>
+                        <li>Expedited Java</li>
+                        <li>Mathematics for Algorithms and System Analysis</li>
+                        <li>Basic Data Structures and Object-Oriented Design</li>
+                        <li>Digital Systems</li>
+                        <li>Online Database Analytics</li>
+                        <li>Software Engineering</li>
+                    </ul>
+                </section>
+                <picture id="idea-emoji">
+                    <img class="emojiIcon" src="ideaEmoji.png" alt="emoji with a light bulb on it's head" width="200">
+                </picture>
+                </div>
+                
+        </main>
+    </body>
+</html>

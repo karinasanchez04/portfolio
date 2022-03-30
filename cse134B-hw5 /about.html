@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Karina Sanchez</title>
+        <link href="csEmoji.ico" rel="icon"/>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <script>
+        function toggleHam(){
+          var menu = document.getElementById('hamMenu');
+          var navMenu = document.getElementById("navListContainer");
+          
+          if(navMenu.style.visibility == "visible"){
+            navMenu.style.visibility = "hidden";
+          }
+          else{
+            navMenu.style.visibility = "visible";
+          }
+        }
+      </script>
+        <header class="navBar">
+            <h1 class="logoK">K</h1>
+            <h1 class="logoS">S</h1>
+            <img id="hamMenu" src="bars-solid.svg" width="20" onclick="toggleHam()">
+            <nav>  
+              <ul class="navList">
+                  <li class="navElem"><a href="index.html">Home</a></li>
+                  <li class="navElem"><a href="projects.html">Projects/Skills</a></li>
+                  <li class="navElem"><a href="contact.html">Contact</a></li>
+                  <li class="navElem"><a href="about.html">About</a></li>
+                  <li class="navElem"><a href="experiment.html">Experiment</a></li>
+                  <li class="navElem"><a href="methodtest.html">Method Test</a></li>
+                <li class="navElem"><a href="styledcrud.html">Blogs</a></li>
+              </ul>
+              
+          </nav>
+        </header>
+        <div id="navListContainer">
+          <nav>  
+            <ul class="navListMobile">
+                <li class="navElemMobile"><a href="index.html">Home</a></li>
+                <li class="navElemMobile"><a href="projects.html">Projects/Skills</a></li>
+                <li class="navElemMobile"><a href="contact.html">Contact</a></li>
+                <li class="navElemMobile"><a href="about.html">About</a></li>
+                <li class="navElemMobile"><a href="experiment.html">Experiment</a></li>
+                <li class="navElemMobile"><a href="methodtest.html">Method Test</a></li>
+              <li class="navElemMobile"><a href="styledcrud.html">Blogs</a></li>
+            </ul>
+            
+        </nav>
+        </div>
+    <body>
+        <main id="about">
+            <div>
+            <section class="about-description">
+                <h2>Who Am I?</h2>
+                I am Karina! I was born and raised in Oxnard, California.
+                <p>I am an <em>undergraduate</em> student currently pursuing a degree in <b>Computer 
+                    Science</b> at the <i>University of California, San Diego</i>.</p>
+                    
+                </section>
+                <section class="about-description">
+                <h3>My Goals</h3>
+                <p>I hope to obtain a degree in Computer Science and then 
+                    enter the Software Engineering field to find ways to improve the daily lives of people.
+                </p>
+            </section>
+            <section class="about-description">
+                <h3>My Hobbies</h3>
+                <p>Some of my hobbies include chasing sunsets at the beach, playing volleyball, watching sports, and painting</p>
+            </section>
+            <section class="about-description">
+                <h3>Fun Fact</h3>
+                <p>My favorite animal is a turtle!</p>
+                <picture>
+                    <img class="emojiIcon" src="./heartEmoji.png" alt="A picture of Karina" width="100" />
+                </picture>
+            </section>
+            </div>
+            
+            <section id="about-picture">
+                <picture>
+                    <source srcset="me.png" height="200" width="100" media="(max-width: 700px)">
+                    <img src="me.png" alt="A picture of Karina" height="600" width="350" />
+                </picture>
+            </section>
+
+        
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

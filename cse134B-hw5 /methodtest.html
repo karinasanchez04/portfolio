@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Karina Sanchez</title>
+        <link href="csEmoji.ico" rel="icon"/>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navBar">
+      <h1 class="logoK">K</h1>
+      <h1 class="logoS">S</h1>
+      <nav>  
+        <ul class="navList">
+            <li class="navElem"><a href="index.html">Home</a></li>
+            <li class="navElem"><a href="projects.html">Projects/Skills</a></li>
+            <li class="navElem"><a href="contact.html">Contact</a></li>
+            <li class="navElem"><a href="about.html">About</a></li>
+            <li class="navElem"><a href="experiment.html">Experiment</a></li>
+            <li class="navElem"><a href="methodtest.html">Method Test</a></li>
+          <li class="navElem"><a href="styledcrud.html">Blogs</a></li>
+        </ul>
+    </nav>
+
+    </header>
+    <main>
+        <form>
+            <fieldset style="border: none;">
+                <label>ID:</label>
+                <input type="text" id="id" name="id">
+            </fieldset>
+            
+            <fieldset style="border: none;">
+            <label>article_name</label>
+            <input type="text" id="article_name" name="article_name">
+            </fieldset>
+
+            
+            <label>article_body</label>
+            <textarea id="article_body" name="article_body"></textarea>
+
+            <fieldset style="border: none;">
+                <input type="text" id="date" name="date" disabled>
+            </fieldset>
+        </form>
+            <button id="postBtn">postBtn</button>
+            <button id="getBtn">getBtn</button>
+            <button id="putBtn">putBtn</button>
+            <button id="deleteBtn">deleteBtn</button>
+            <br>
+            <output><pre name="response" id="response"></pre></output>
+            <script type="module" src="method.js">
+            </script>
+    </main>
+  </body>
+  <footer>
+    
+  </footer>
+</html>

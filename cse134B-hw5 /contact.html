@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Karina Sanchez</title>
+        <link href="csEmoji.ico" rel="icon"/>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDJoypFZwx4IV21j5-_NI9eipcbWwajWdY",
+              authDomain: "cse134b-hw4-11936.firebaseapp.com",
+              projectId: "cse134b-hw4-11936",
+              storageBucket: "cse134b-hw4-11936.appspot.com",
+              messagingSenderId: "1076707386613",
+              appId: "1:1076707386613:web:7cb44ab56cc513a81951bc",
+              measurementId: "G-LLSL067JYG"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    </head>
+    <body>
+      <script>
+        function toggleHam(){
+          var menu = document.getElementById('hamMenu');
+          var navMenu = document.getElementById("navListContainer");
+          
+          if(navMenu.style.visibility == "visible"){
+            navMenu.style.visibility = "hidden";
+          }
+          else{
+            navMenu.style.visibility = "visible";
+          }
+        }
+      </script>
+        <header class="navBar">
+            <h1 class="logoK">K</h1>
+            <h1 class="logoS">S</h1>
+            <img id="hamMenu" src="bars-solid.svg" width="20" onclick="toggleHam()">
+            <nav>  
+              <ul class="navList">
+                  <li class="navElem"><a href="index.html">Home</a></li>
+                  <li class="navElem"><a href="projects.html">Projects/Skills</a></li>
+                  <li class="navElem"><a href="contact.html">Contact</a></li>
+                  <li class="navElem"><a href="about.html">About</a></li>
+                  <li class="navElem"><a href="experiment.html">Experiment</a></li>
+                  <li class="navElem"><a href="methodtest.html">Method Test</a></li>
+                <li class="navElem"><a href="styledcrud.html">Blogs</a></li>
+              </ul>
+              
+          </nav>
+        </header>
+        <div id="navListContainer">
+          <nav>  
+            <ul class="navListMobile">
+                <li class="navElemMobile"><a href="index.html">Home</a></li>
+                <li class="navElemMobile"><a href="projects.html">Projects/Skills</a></li>
+                <li class="navElemMobile"><a href="contact.html">Contact</a></li>
+                <li class="navElemMobile"><a href="about.html">About</a></li>
+                <li class="navElemMobile"><a href="experiment.html">Experiment</a></li>
+                <li class="navElemMobile"><a href="methodtest.html">Method Test</a></li>
+              <li class="navElemMobile"><a href="styledcrud.html">Blogs</a></li>
+            </ul>
+            
+        </nav>
+        </div>
+        <main id="contact-wrapper">
+            <section id="contact-container">
+            <h2>Say Hi!</h2>
+            <picture id="contact-emoji">
+                <img class="emojiIcon" src="contact.png" alt="an emoji waving hi" width="100">
+            </picture>
+            <form>
+                <p>Email me to get in touch about a job position or if you would like to 
+                    work on a project together!
+                </p>
+                <fieldset>
+                    <legend>Fill this out!</legend>
+                <label>Name:</label>
+                <input type="text" name="name" id="name">
+                <br> <br>
+                <label>Email:</label>
+                <input type="text" name="email" id="email">
+                <br> <br>
+                <label>Message:</label>
+                <br>
+                <textarea rows="15" cols="40"></textarea>
+                      <br>
+                      <button type="button">Submit!</button>
+                </fieldset>
+            </form>
+            </section>
+            <section id="socials-container">
+                <h2>Connect With Me!</h2>
+                <img src="./linkedin-brands.svg" width="30px" alt="linkedin logo">
+                <a href="https://www.linkedin.com/in/karina-sanchez-6392001b7/">LinkedIn</a> 
+                <br>
+                <img src="./github-brands.svg" width="30px" alt="instagram logo">
+                <a href="https://www.linkedin.com/in/karina-sanchez-6392001b7/">Github</a>
+                <br>
+                
+                <p><img class="logo" src="./envelope-solid.svg" width="30px" alt="instagram logo"><strong> Email:</strong> karinaceleste04@gmail.com</p>
+                
+                <p><img class="logo" src="./instagram-brands.svg" width="30px" alt="instagram logo">  Instagram: karina_sanchez4</p>
+                <picture>
+                    <img id="peaceEmoji" class="emojiIcon" src="./peaceEmoji.png" alt="emoji showing peace sign" width="250">
+                </picture>
+
+            </section>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Karina Sanchez</title>
+        <link href="csEmoji.ico" rel="icon"/>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <script>
+        function toggleHam(){
+          var menu = document.getElementById('hamMenu');
+          var navMenu = document.getElementById("navListContainer");
+          
+          if(navMenu.style.visibility == "visible"){
+            navMenu.style.visibility = "hidden";
+          }
+          else{
+            navMenu.style.visibility = "visible";
+          }
+        }
+      </script>
+        <header class="navBar">
+            <h1 class="logoK">K</h1>
+            <h1 class="logoS">S</h1>
+            <img id="hamMenu" src="bars-solid.svg" width="20" onclick="toggleHam()">
+            <nav>  
+              <ul class="navList">
+                  <li class="navElem"><a href="index.html">Home</a></li>
+                  <li class="navElem"><a href="projects.html">Projects/Skills</a></li>
+                  <li class="navElem"><a href="contact.html">Contact</a></li>
+                  <li class="navElem"><a href="about.html">About</a></li>
+                  <li class="navElem"><a href="experiment.html">Experiment</a></li>
+                  <li class="navElem"><a href="methodtest.html">Method Test</a></li>
+                <li class="navElem"><a href="styledcrud.html">Blogs</a></li>
+              </ul>
+              
+          </nav>
+        </header>
+        <div id="navListContainer">
+          <nav>  
+            <ul class="navListMobile">
+                <li class="navElemMobile"><a href="index.html">Home</a></li>
+                <li class="navElemMobile"><a href="projects.html">Projects/Skills</a></li>
+                <li class="navElemMobile"><a href="contact.html">Contact</a></li>
+                <li class="navElemMobile"><a href="about.html">About</a></li>
+                <li class="navElemMobile"><a href="experiment.html">Experiment</a></li>
+                <li class="navElemMobile"><a href="methodtest.html">Method Test</a></li>
+              <li class="navElemMobile"><a href="styledcrud.html">Blogs</a></li>
+            </ul>
+            
+        </nav>
+        </div>
+        <main>
+            <div id="home-container">
+            <section id="intro">
+                <p style="font-size: 20px;">Hi there, my name is </p>
+            <p style="font-size: 2.5em; text-align: center; "><strong>Karina Sanchez</strong> </p>
+            <p style="font-size: 1.3em;"><strong> Software Engineer + Developer </strong></p>
+            <p style="font-size: 1.2em;">Welcome to my portfolio!</p>
+            <picture id="hi-emoji">
+              <img class="emojiIcon" src="hiEmoji.png" alt="an emoji waving hi" width="100">
+            </picture>
+            </section>
+            
+
+            <section id="emoji-picture">
+                <picture >
+                    <source srcset="csEmoji.png" width="100" media="(max-width: 700px)">
+                <img class="emojiIcon" src="csEmoji.png" alt="an emoji of me" height="300">
+                </picture>
+                <p id="text-intro">Hi, I'm Karina!</p>
+                <br>
+                <p id="text-outro">I like to code!</p>
+            </section>
+            </div>
+            <div id="flowers-container">
+                <svg class="flower" height="100" width="100">
+                    <circle class="center" cx="55" cy="50" r="10" stroke="pink" stroke-width="3" />
+                    <circle class="petal" cx="55" cy="35" r="5" stroke="pink" stroke-width="3" />
+                    <circle class="petal" cx="65" cy="38" r="5" stroke="pink" stroke-width="3" />
+                    <circle class="petal" cx="45" cy="38" r="5" stroke="pink" stroke-width="3" />
+                    <circle class="petal" cx="70" cy="48" r="5" stroke="pink" stroke-width="3" />
+                    <circle class="petal" cx="40" cy="48" r="5" stroke="pink" stroke-width="3" />
+                    <circle class="petal" cx="68" cy="59" r="5" stroke="pink" stroke-width="3" />
+                    <circle class="petal" cx="43" cy="59" r="5" stroke="pink" stroke-width="3" />
+                    <circle class="petal" cx="56" cy="65" r="5" stroke="pink" stroke-width="3" />
+                    <rect class="stem" x="52" y="70" width="5" height="100" />
+                    <ellipse class="stem" cx="43" cy="85" rx="10" ry="6"/>
+                    <ellipse class="stem" cx="65" cy="75" rx="10" ry="6"/>
+                  </svg>
+              <svg class="flower" height="100" width="100">
+                <circle class="center" cx="55" cy="50" r="10" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="55" cy="35" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="65" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="45" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="70" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="40" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="68" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="43" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="56" cy="65" r="5" stroke="pink" stroke-width="3" />
+                <rect class="stem" x="52" y="70" width="5" height="100" />
+                <ellipse class="stem" cx="43" cy="85" rx="10" ry="6"/>
+                <ellipse class="stem" cx="65" cy="75" rx="10" ry="6"/>
+              </svg>
+              <svg class="flower" height="100" width="100">
+                <circle class="center" cx="55" cy="50" r="10" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="55" cy="35" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="65" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="45" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="70" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="40" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="68" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="43" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="56" cy="65" r="5" stroke="pink" stroke-width="3" />
+                <rect class="stem" x="52" y="70" width="5" height="100" />
+                <ellipse class="stem" cx="43" cy="85" rx="10" ry="6"/>
+                <ellipse class="stem" cx="65" cy="75" rx="10" ry="6"/>
+              </svg>
+              <svg class="flower" height="100" width="100">
+                <circle class="center" cx="55" cy="50" r="10" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="55" cy="35" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="65" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="45" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="70" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="40" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="68" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="43" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="56" cy="65" r="5" stroke="pink" stroke-width="3" />
+                <rect class="stem" x="52" y="70" width="5" height="100" />
+                <ellipse class="stem" cx="43" cy="85" rx="10" ry="6"/>
+                <ellipse class="stem" cx="65" cy="75" rx="10" ry="6"/>
+              </svg>
+              <svg class="flower" height="100" width="100">
+                <circle class="center" cx="55" cy="50" r="10" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="55" cy="35" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="65" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="45" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="70" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="40" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="68" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="43" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="56" cy="65" r="5" stroke="pink" stroke-width="3" />
+                <rect class="stem" x="52" y="70" width="5" height="100" />
+                <ellipse class="stem" cx="43" cy="85" rx="10" ry="6"/>
+                <ellipse class="stem" cx="65" cy="75" rx="10" ry="6"/>
+              </svg>
+              <svg class="flower" height="100" width="100">
+                <circle class="center" cx="55" cy="50" r="10" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="55" cy="35" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="65" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="45" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="70" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="40" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="68" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="43" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="56" cy="65" r="5" stroke="pink" stroke-width="3" />
+                <rect class="stem" x="52" y="70" width="5" height="100" />
+                <ellipse class="stem" cx="43" cy="85" rx="10" ry="6"/>
+                <ellipse class="stem" cx="65" cy="75" rx="10" ry="6"/>
+              </svg>
+              <svg class="flower" height="100" width="100">
+                <circle class="center" cx="55" cy="50" r="10" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="55" cy="35" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="65" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="45" cy="38" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="70" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="40" cy="48" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="68" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="43" cy="59" r="5" stroke="pink" stroke-width="3" />
+                <circle class="petal" cx="56" cy="65" r="5" stroke="pink" stroke-width="3" />
+                <rect class="stem" x="52" y="70" width="5" height="100" />
+                <ellipse class="stem" cx="43" cy="85" rx="10" ry="6"/>
+                <ellipse class="stem" cx="65" cy="75" rx="10" ry="6"/>
+              </svg>
+            </div>
+
+        </main>
+        <footer>
+            <p style="text-align: center;">This site was made by Karina </p>
+        </footer>
+    </body>
+    
+</html>

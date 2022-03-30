@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Karina Sanchez</title>
+        <link href="csEmoji.ico" rel="icon"/>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+
+        <style>
+
+            p{
+                background-color: #F4E6E4;
+                border-style: groove;
+                border-width: 10px;
+                border-color: #BDA49C;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            button{
+                cursor: pointer;
+                color: green;
+                background-color: rgb(255, 255, 255);
+                margin: 5px;
+            }
+            button:hover{
+                color: blue;
+                box-shadow: 2px 5px 3px var(--light-grey); 
+                transform: scale(1.11, 1.11);
+                transition: ease-in-out .25s;
+            }
+            h1{
+                text-align: center;
+            }
+
+            #addBtn{
+                width: 100px;
+                height: 40px;
+                margin-left: 30px;
+            }
+
+            form{
+                background-color: pink;
+                padding: 10px;
+            }
+            label{
+                margin: 10px;
+                float: left;
+            }
+            input{
+                margin: 10px;
+                float: right;
+            }
+            #loginBtn, #logoutBtn{
+                float: right;
+                margin-right: 40px;
+            }
+            #loggedIn{
+                margin-left: 20px;
+            }
+            #blogs{
+                display: flex;
+                justify-self: center;
+                flex-wrap: wrap;
+                padding: 20px;
+            }
+            .blogs{
+                padding: 20px;
+                width: 300px;
+            }
+
+        </style>
+  </head>
+  <body>
+    <header class="navBar">
+        <h1 class="logoK">K</h1>
+        <h1 class="logoS">S</h1>
+        <nav>  
+            <ul class="navList">
+                <li class="navElem"><a href="index.html">Home</a></li>
+                <li class="navElem"><a href="projects.html">Projects/Skills</a></li>
+                <li class="navElem"><a href="contact.html">Contact</a></li>
+                <li class="navElem"><a href="about.html">About</a></li>
+                <li class="navElem"><a href="experiment.html">Experiment</a></li>
+                <li class="navElem"><a href="methodtest.html">Method Test</a></li>
+              <li class="navElem"><a href="styledcrud.html">Blogs</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1>Blogs</h1>
+    <h2 id="loggedIn"></h2>
+    <button id="loginBtn">Login here</button>
+    <button id="logoutBtn">Logout here</button>
+    <dialog id="loginDialog">
+        <form id="loginForm">
+          <label for="email">Email</label> <input type="text" id="emailInput" name="usernameInput">
+          <br>
+          <label for="password">Password</label> <input type="text" id="pwInput" name="pwInput">
+          <br>
+          <button id="cancelBtn2"> Cancel </button>
+          <button id="loginBtn2" type="submit"> Login </button>
+      </form>
+    </dialog>
+    <br>
+    <script type="module" src="styledposts.js"></script>
+    <button id="addBtn" class="crudBtns"> Add Blog <img src="./plusIcon.png" width="10"></button>
+        <dialog id="addDialog">
+               
+        <form>
+          <label for="title">Blog Title</label> <input type="text" id="inputTitle" name="inputTitle">
+          <br>
+          <label for="summary">Content</label><input type="text" id="inputSummary" name="inputSummary" >
+          <br>
+          <label for="author">Author</label><input type="text" id="inputAuthor" name="inputAuthor" disabled>
+          <br>
+          <label for="date">Date</label> <input type="text" id="inputDate" name="inputDate" disabled>
+          <br>
+          <button id="cancelBtn"> Cancel </button>
+          <button id="saveBtn"> Save </button>
+      </form>
+        </dialog>
+
+        <dialog id="updateDialog">
+               
+          <form>
+            <label for="title1">Blog Title</label> <input type="text" id="inputTitle1" name="inputTitle1" disabled>
+            <br>
+            <label for="summary1">Content</label><input type="text" id="inputSummary1" name="inputSummary1">
+            <br>
+            <label for="author1">Author</label><input type="text" id="inputAuthor1" name="inputAuthor1" disabled>
+            <br>
+            <label for="date1">Date</label> <input type="text" id="inputDate1" name="inputDate1" disabled>
+            <br>
+            <button id="cancelBtn"> Cancel </button>
+            <button id="saveupdateBtn"> Update </button>
+            </form>
+          </dialog>
+
+        <section id="blogs">
+
+        </section>
+  </body>
+  
+ 
+  </script>
+  <footer>
+    
+  </footer>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Karina Sanchez</title>
+        <link href="csEmoji.ico" rel="icon"/>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="./purify.min.js"></script>
+  </head>
+  <body>
+    <header class="navBar">
+        <h1 class="logoK">K</h1>
+        <h1 class="logoS">S</h1>
+        <nav>  
+            <ul class="navList">
+                <li class="navElem"><a href="index.html">Home</a></li>
+                <li class="navElem"><a href="projects.html">Projects/Skills</a></li>
+                <li class="navElem"><a href="contact.html">Contact</a></li>
+                <li class="navElem"><a href="about.html">About</a></li>
+                <li class="navElem"><a href="experiment.html">Experiment</a></li>
+                <li class="navElem"><a href="nativedialogs.html">Native</a></li>
+                <li class="navElem"><a href="customdialogs.html">Custom</a></li>
+                <li class="navElem"><a href="crud.html">Crud</a></li>
+                <li class="navElem"><a href="styledcrud.html">Styled Crud</a></li>
+            </ul>
+        </nav>
+
+    </header>
+        <button id="alert">Alert</button>
+        <button id="confirm">Confirm</button>
+        <button id="prompt">Prompt</button>
+        <button id="saferPrompt">Safer Prompt</button>
+        <br>
+        <output id="result"></output> 
+  </body>
+  <footer>
+    <script> 
+        let alertBtn = document.getElementById("alert");
+        alertBtn.addEventListener("click", () =>{
+            alert("This is an alert");
+        });
+
+        let confirmBtn = document.getElementById("confirm");
+        confirmBtn.addEventListener("click", () =>{
+            let ans = confirm("Do you confirm this?");
+            let text;
+            if(ans == true){
+                text = "true";
+            }
+            else{
+                text = "false";
+            }
+            document.getElementById("result").innerHTML = "The value returned by the confirm method is: " + text;
+        });
+        let promptBtn = document.getElementById("prompt");
+        promptBtn.addEventListener("click", () =>{
+            let text = prompt("What is your name?");
+            if(text == null || text.length==0){
+                text = "The User did not enter anything";
+            }
+            document.getElementById("result").innerHTML = "The value returned by the prompt method is: " + text;
+        });
+
+        let safeBtn = document.getElementById("saferPrompt");
+        safeBtn.addEventListener("click", () =>{
+            let text = prompt("What is your name?");
+            if(text == null || text.length==0){
+                text = "The User did not enter anything";
+            }
+            let clean = DOMPurify.sanitize(text);
+            document.getElementById("result").innerHTML = "The value returned by the Safer prompt method is: " + clean;
+        });
+    </script>
+  </footer>
+</html>
